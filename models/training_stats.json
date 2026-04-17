@@ -1,0 +1,207 @@
+{
+  "target": "SalePrice",
+  "features": [
+    "GrLivArea",
+    "TotalBsmtSF",
+    "LotArea",
+    "LotFrontage",
+    "YearBuilt",
+    "OverallQual",
+    "BedroomAbvGr",
+    "FullBath",
+    "HalfBath",
+    "GarageCars",
+    "GarageArea",
+    "Neighborhood"
+  ],
+  "numeric_features": [
+    "GrLivArea",
+    "TotalBsmtSF",
+    "LotArea",
+    "LotFrontage",
+    "YearBuilt",
+    "OverallQual",
+    "BedroomAbvGr",
+    "FullBath",
+    "HalfBath",
+    "GarageCars",
+    "GarageArea"
+  ],
+  "nominal_features": [
+    "Neighborhood"
+  ],
+  "n_train": 1758,
+  "n_total": 2930,
+  "sale_price_stats": {
+    "mean": 179194.48,
+    "median": 160100.0,
+    "std": 77798.27,
+    "min": 12789.0,
+    "max": 755000.0,
+    "25%": 129425.0,
+    "75%": 210000.0
+  },
+  "neighborhood_stats": {
+    "Blmngtn": {
+      "median": 191500.0,
+      "mean": 196662.0,
+      "count": 28
+    },
+    "Blueste": {
+      "median": 130500.0,
+      "mean": 143590.0,
+      "count": 10
+    },
+    "BrDale": {
+      "median": 106000.0,
+      "mean": 105608.0,
+      "count": 30
+    },
+    "BrkSide": {
+      "median": 126750.0,
+      "mean": 124756.0,
+      "count": 108
+    },
+    "ClearCr": {
+      "median": 197500.0,
+      "mean": 208662.0,
+      "count": 44
+    },
+    "CollgCr": {
+      "median": 200000.0,
+      "mean": 201803.0,
+      "count": 267
+    },
+    "Crawfor": {
+      "median": 200624.0,
+      "mean": 207551.0,
+      "count": 103
+    },
+    "Edwards": {
+      "median": 125000.0,
+      "mean": 130843.0,
+      "count": 194
+    },
+    "Gilbert": {
+      "median": 183000.0,
+      "mean": 190647.0,
+      "count": 165
+    },
+    "Greens": {
+      "median": 198000.0,
+      "mean": 193531.0,
+      "count": 8
+    },
+    "GrnHill": {
+      "median": 280000.0,
+      "mean": 280000.0,
+      "count": 2
+    },
+    "IDOTRR": {
+      "median": 106500.0,
+      "mean": 103753.0,
+      "count": 93
+    },
+    "Landmrk": {
+      "median": 137000.0,
+      "mean": 137000.0,
+      "count": 1
+    },
+    "MeadowV": {
+      "median": 88250.0,
+      "mean": 95756.0,
+      "count": 37
+    },
+    "Mitchel": {
+      "median": 153500.0,
+      "mean": 162227.0,
+      "count": 114
+    },
+    "NAmes": {
+      "median": 140000.0,
+      "mean": 145097.0,
+      "count": 443
+    },
+    "NPkVill": {
+      "median": 143750.0,
+      "mean": 140711.0,
+      "count": 23
+    },
+    "NWAmes": {
+      "median": 181000.0,
+      "mean": 188407.0,
+      "count": 131
+    },
+    "NoRidge": {
+      "median": 302000.0,
+      "mean": 330319.0,
+      "count": 71
+    },
+    "NridgHt": {
+      "median": 317750.0,
+      "mean": 322018.0,
+      "count": 166
+    },
+    "OldTown": {
+      "median": 119900.0,
+      "mean": 123992.0,
+      "count": 239
+    },
+    "SWISU": {
+      "median": 136200.0,
+      "mean": 135072.0,
+      "count": 48
+    },
+    "Sawyer": {
+      "median": 135000.0,
+      "mean": 136751.0,
+      "count": 151
+    },
+    "SawyerW": {
+      "median": 180000.0,
+      "mean": 184070.0,
+      "count": 125
+    },
+    "Somerst": {
+      "median": 225500.0,
+      "mean": 229707.0,
+      "count": 182
+    },
+    "StoneBr": {
+      "median": 319000.0,
+      "mean": 324229.0,
+      "count": 51
+    },
+    "Timber": {
+      "median": 232106.0,
+      "mean": 246600.0,
+      "count": 72
+    },
+    "Veenker": {
+      "median": 250250.0,
+      "mean": 248315.0,
+      "count": 24
+    }
+  },
+  "feature_importance": {
+    "OverallQual": 0.5217,
+    "GrLivArea": 0.1571,
+    "TotalBsmtSF": 0.1115,
+    "GarageCars": 0.0555,
+    "YearBuilt": 0.0482,
+    "FullBath": 0.0336,
+    "LotArea": 0.0314,
+    "Neighborhood": 0.017537221627452148,
+    "GarageArea": 0.0119,
+    "LotFrontage": 0.0055,
+    "BedroomAbvGr": 0.0036,
+    "HalfBath": 0.0026
+  },
+  "model_type": "Gradient Boosting",
+  "model_metrics": {
+    "val_rmse": 28864.53,
+    "val_r2": 0.8795,
+    "test_rmse": 24602.22,
+    "test_r2": 0.9112
+  }
+}
