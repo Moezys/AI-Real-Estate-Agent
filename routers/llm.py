@@ -29,8 +29,7 @@ def _get_client() -> genai.Client:
 
 
 MAX_RETRIES = 3
-RETRY_BASE_DELAY = 2  # seconds
-
+RETRY_BASE_DELAY = 2
 
 def _call_with_retry(func, *args, **kwargs):
     """Call *func* with automatic retry on 429 RESOURCE_EXHAUSTED errors."""

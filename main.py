@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from dotenv import load_dotenv
 from fastapi import FastAPI
 
-load_dotenv()  # Load .env before anything reads env vars
+load_dotenv()
 
 from routers.chat import router as chat_router
 from routers.ml_model import load_model

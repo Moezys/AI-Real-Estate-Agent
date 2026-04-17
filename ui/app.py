@@ -10,7 +10,10 @@ import os
 import requests
 import streamlit as st
 
-API_URL = os.environ.get("API_URL", "http://localhost:8000")
+try:
+    API_URL = st.secrets["API_URL"]
+except (KeyError, FileNotFoundError):
+    API_URL = os.environ.get("API_URL", "http://localhost:8000")
 
 st.set_page_config(page_title="AI Real Estate Agent", page_icon="🏠", layout="wide")
 st.title("🏠 AI Real Estate Agent — Ames, Iowa")
